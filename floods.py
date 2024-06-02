@@ -8,7 +8,7 @@ model =job.load('floods.joblib')
 
 @app.route('/', methods=['GET'])
 def home():
-    return render_template('/floods.html')
+    return render_template('floods.html')
 
 @app.route('/', methods=['POST'])
 def predict():
@@ -17,8 +17,8 @@ def predict():
         array_features = [np.array(features)]
         prediction= model.predict(array_features)
 
-        return render_template('/floods.html', prediction=prediction)
-    return render_template ('/floods.html')
+        return render_template('floods.html', prediction=prediction)
+    return render_template ('floods.html')
     #
 if __name__ == '__main__':
     app.run(debug=True)
