@@ -1,6 +1,8 @@
 from flask import Flask,jsonify, render_template, request, url_for
 import joblib as job
 import numpy as np
+from sklearn.ensemble import HistGradientBoostingRegressor
+
 app =Flask(__name__, template_folder='templete')
 
 model =job.load('floods.joblib')
