@@ -1,9 +1,9 @@
 from flask import Flask,jsonify, render_template, request, url_for
-from joblib import load
+import joblib as job
 import numpy as np
 app =Flask(__name__, template_folder='templete')
 
-model =load('floods.joblib')
+model =job.load('floods.joblib')
 
 
 @app.route('/', methods=['GET'])
