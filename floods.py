@@ -10,7 +10,7 @@ model =load('floods.joblib')
 def home():
     return render_template('/floods.html')
 
-@app.route('/', methods=['GET','POST'])
+@app.route('/', methods=['POST'])
 def predict():
     if request.method == "POST":
         features = [float(x) for x in request.form.values()]
