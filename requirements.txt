@@ -8,4 +8,6 @@ joblib==1.4.2
 numpy==1.26.4
 Werkzeug==3.0.2
 pandas==1.4.2
-scikit-learn==1.0.2
+scikit-learn==1.4.2
+scipy version: 1.13.0
+threadpoolctl version: 3.5.0
