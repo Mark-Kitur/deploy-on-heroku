@@ -1,0 +1,17 @@
+file_type: csv
+dataset_name: phone_file
+file_name: phone
+table_name: edsurv
+skip_leading_rows: 1
+columns:
+  - Index
+  - Arrival_Time
+  - Creation_Time
+  - x
+  - y
+  - z
+  - User
+  - Model
+  - Device
+  - gt
+
